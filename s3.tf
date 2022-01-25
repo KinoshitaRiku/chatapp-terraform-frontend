@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "frontend" {
   # variable
-  bucket = "rk-self-introduction"
+  bucket = "chatapp-frontend"
   acl    = "private"
 }
 
