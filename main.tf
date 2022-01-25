@@ -4,6 +4,9 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 3.0"
     }
+    archive = {
+      version = "2.2.0"
+    }
   }
 }
 
@@ -17,7 +20,3 @@ provider "aws" {
 #   token        = var.github_token
 #   organization = var.github_organization
 # }
-
-provider "archive" {
-  version = "2.2.0"
-}
