@@ -8,5 +8,4 @@ variable "github_connection_arn" {}
 
 variable "parent_domain" {}
 
-
 #variable "github_organization" {}
