@@ -20,7 +20,7 @@ resource "aws_codepipeline" "frontend" {
       configuration = {
         BranchName = "main"
         ConnectionArn = var.github_connection_arn
-        FullRepositoryId = "KinoshitaRiku/self-introduction"
+        FullRepositoryId = "KinoshitaRiku/nuxtjs-api-chatapp"
         OutputArtifactFormat = "CODEBUILD_CLONE_REF"
       }
     }
@@ -82,7 +82,7 @@ resource "aws_codepipeline" "frontend" {
   }
 }
 
-resource "aws_s3_bucket" "forntend_artifact" {
+resource "aws_s3_bucket" "frontend_artifact" {
   # variable
   bucket = "rk-self-introduction-artifact"
   acl    = "private"

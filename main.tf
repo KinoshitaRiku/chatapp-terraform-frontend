@@ -16,7 +16,7 @@ provider "aws" {
   secret_key = var.aws_secret_key
 }
 
-# provider "github" {
-#   token        = var.github_token
-#   organization = var.github_organization
-# }
+provider "github" {
+  token        = var.github_token
+  organization = var.github_organization
+}
