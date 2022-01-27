@@ -27,7 +27,7 @@ resource "aws_codebuild_project" "frontend" {
   source {
     type            = "GITHUB"
     git_clone_depth = 1
-    location        = "https://github.com/KinoshitaRiku/self-introduction.git"
+    location        = "https://github.com/KinoshitaRiku/nuxtjs-api-chatapp.git"
     
     buildspec       = "buildspec.yml"
   }
