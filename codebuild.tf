@@ -1,5 +1,5 @@
 resource "aws_codebuild_project" "frontend" {
-  name         = "self-introduction-codebuild"
+  name         = "chatapp-frontend-codebuild"
   service_role = aws_iam_role.codebuild_role.arn
  
   artifacts {
