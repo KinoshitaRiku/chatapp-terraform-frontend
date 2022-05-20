@@ -1,5 +1,9 @@
 resource "aws_s3_bucket" "frontend" {
   bucket = "chatapp-frontend"
+}
+
+resource "aws_s3_bucket_acl" "example_bucket_acl" {
+  bucket = aws_s3_bucket. frontend.id
   acl    = "private"
 }
 
