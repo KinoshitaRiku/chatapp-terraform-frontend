@@ -14,10 +14,10 @@ resource "aws_route53_zone" "frontend" {
 
 resource "aws_route53_record" "frontend_cname" {
   zone_id = aws_route53_zone.frontend.zone_id
-  name    = var.parent_domain
+  name    = var.acm_ssl_cname_name
   type    = "CNAME"
   ttl     = "300"
-  records = "test"
+  records = var.acm_ssl_cname_value
 }
 
 # resource "aws_route53_record" "" {

@@ -1,3 +1,10 @@
+# DONE
+## terraform
+
+## その他
+- お名前.comでドメインの取得
+- ACM(region:us-east-1)でssl証明の発行
+
 # terraform
 ・terraformCloudでこのリポジトリのmainブランチに変更があれば動作する<br>
 ・variables.tfの値は、terraformCloudのvariablesに設定<br>
