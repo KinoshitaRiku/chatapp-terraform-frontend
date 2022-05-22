@@ -12,7 +12,7 @@ resource "aws_route53_zone" "frontend" {
 #   records = aws_route53_zone.frontend.name_servers
 # }
 
-resource "aws_route53_record" "" {
+resource "aws_route53_record" "frontend_cname" {
   zone_id = aws_route53_zone.frontend.zone_id
   name    = var.parent_domain
   type    = "CNAME"

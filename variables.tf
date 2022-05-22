@@ -4,6 +4,10 @@ variable "aws_secret_key" {}
 
 variable "parent_domain" {}
 
+variable "cname_name" {}
+
+variable "cname_value" {}
+
 # variable "github_token" {}
 
 # variable "github_connection_arn" {}
