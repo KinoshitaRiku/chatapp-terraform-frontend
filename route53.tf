@@ -17,7 +17,7 @@ resource "aws_route53_record" "frontend_cname" {
   name    = var.acm_ssl_cname_name
   type    = "CNAME"
   ttl     = "300"
-  records = var.acm_ssl_cname_value
+  records = ["test"]
 }
 
 # resource "aws_route53_record" "" {
