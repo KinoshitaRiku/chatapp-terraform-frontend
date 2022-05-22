@@ -8,6 +8,8 @@ variable "acm_ssl_cname_name" {}
 
 variable "acm_ssl_cname_value" {}
 
+variable "acm_arn" {}
+
 # variable "github_token" {}
 
 # variable "github_connection_arn" {}
