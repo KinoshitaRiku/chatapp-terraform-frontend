@@ -2,7 +2,6 @@
 
 resource "aws_route53_zone" "frontend" {
   name         = var.parent_domain
-  private_zone = false
 }
 
 # resource "aws_route53_record" "parent_to_frontend" {
