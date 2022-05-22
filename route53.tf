@@ -1,7 +1,7 @@
 #未完成
 
 resource "aws_route53_zone" "frontend" {
-  name         = var.parent_domain
+  name = var.parent_domain
 }
 
 resource "aws_route53_record" "frontend_cname" {
@@ -14,11 +14,11 @@ resource "aws_route53_record" "frontend_cname" {
 
 resource "aws_route53_record" "frontend_a" {
   zone_id = aws_route53_zone.frontend.zone_id
-  name    = var.parent_domain
+  name    = ""
   type    = "A"
   alias {
     name                   = aws_cloudfront_distribution.frontend.domain_name
-    zone_id                = aws_route53_zone.frontend.zone_id
-    evaluate_target_health = true
+    zone_id                = aws_cloudfront_distribution.frontend.hosted_zone_id
+    evaluate_target_health = false
   }
 }
